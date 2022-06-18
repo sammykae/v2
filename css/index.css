@@ -1,0 +1,155 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: white;
+}
+h1 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+}
+p {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: hsl(192, 100%, 9%);
+}
+.header {
+	display: flex;
+	padding: 0 70px;
+	padding-top: 60px;
+	margin-bottom: 25vh;
+}
+.img-container {
+	flex-grow: 1;
+}
+.header > button {
+	width: 115px;
+	padding: 0.5vh 0.5vw;
+	border: 1px solid hsl(322, 100%, 66%);
+	background-color: white;
+	color: hsl(322, 100%, 66%);
+	border-radius: 30px;
+}
+.build,
+.ready {
+	text-align: center;
+}
+.build > h1 {
+	font-size: 40px;
+	padding: 3vh 5vw;
+}
+.build > p {
+	font-size: 20px;
+	padding: 0 28vw;
+	padding-bottom: 7vh;
+	line-height: 28px;
+}
+.build > button,
+.ready > button {
+	width: 350px;
+	border-radius: 50px;
+	padding: 4vh 6vw;
+	font-size: 18px;
+	background-color: hsl(322, 100%, 66%);
+	color: white;
+	border: none;
+	box-shadow: 2px 3px 10px rgba(128, 128, 128, 0.788);
+	margin-bottom: 10vh;
+}
+.screen {
+	text-align: center;
+	padding: 2vh 8vw;
+	margin-bottom: 10vh;
+}
+.screen > img {
+	width: 80%;
+}
+.com-msg {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 10vh;
+}
+.com > h1 {
+	font-size: 70px;
+	padding-bottom: 3vh;
+}
+.grow,
+.users {
+	display: grid;
+	padding: 5vh 7vw;
+	grid-template-columns: repeat(2, 2fr);
+	background-color: #f6fbff;
+	column-gap: 10vw;
+}
+.users {
+	padding: 2vh 7vw;
+}
+.brow,
+.users > .chat {
+	padding: 15vh 0;
+}
+.flow > .conversation {
+	padding: 25vh 0;
+}
+.brow > h1,
+.conversation > h1,
+.chat > h1,
+.ready > h1,
+.hud {
+	padding-bottom: 3vh;
+}
+.row > img {
+	width: 400px;
+	height: 300px;
+}
+.im > img {
+	width: 100%;
+	margin: -10px 0;
+}
+.cut > img {
+	margin: 0;
+}
+.illus > img {
+	width: 400px;
+	height: 400px;
+}
+.flow {
+	margin-top: 10vh;
+	padding: 0 10vw;
+	display: flex;
+	gap: 15%;
+	margin-bottom: 10vh;
+}
+.ready {
+	padding: 10vh 7vw;
+}
+.news {
+	display: flex;
+	gap: 30%;
+	padding: 5vh 7vw;
+	background-color: hsl(192, 100%, 9%);
+}
+.huddle > .hud {
+	display: flex;
+	gap: 1%;
+}
+.pic {
+	display: flex;
+	column-gap: 2vw;
+}
+.pic > img {
+	width: 20px;
+	height: 20px;
+}
+.huddle > p,
+.pic > p,
+.letter > h1,
+.letter > p,
+.hud {
+	color: white;
+}
+.huddle > p {
+	padding-bottom: 4vh;
+	line-height: 25px;
+}
