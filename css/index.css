@@ -12,20 +12,20 @@ h1 {
 p {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
-	color: hsl(192, 100%, 9%);
+	font-size: 18px;
 }
 .header {
 	display: flex;
-	padding: 0 70px;
-	padding-top: 60px;
-	margin-bottom: 25vh;
+	padding: 0 60px;
+	margin-top: 50px;
+	margin-bottom: 80px;
 }
 .img-container {
 	flex-grow: 1;
 }
 .header > button {
-	width: 115px;
-	padding: 0.5vh 0.5vw;
+	width: 150px;
+	font-size: 15px;
 	border: 1px solid hsl(322, 100%, 66%);
 	background-color: white;
 	color: hsl(322, 100%, 66%);
@@ -37,33 +37,31 @@ p {
 }
 .build > h1 {
 	font-size: 40px;
-	padding: 3vh 5vw;
+	padding: 40px 0;
 }
 .build > p {
-	font-size: 20px;
-	padding: 0 28vw;
-	padding-bottom: 7vh;
-	line-height: 28px;
+	font-size: 18px;
+	padding: 0 30vw 9vh 30vw;
+	line-height: 25px;
 }
 .build > button,
 .ready > button {
 	width: 350px;
 	border-radius: 50px;
-	padding: 4vh 6vw;
+	padding: 25px 20px;
 	font-size: 18px;
 	background-color: hsl(322, 100%, 66%);
 	color: white;
 	border: none;
 	box-shadow: 2px 3px 10px rgba(128, 128, 128, 0.788);
-	margin-bottom: 10vh;
+	margin-bottom: 13vh;
 }
 .screen {
 	text-align: center;
-	padding: 2vh 8vw;
 	margin-bottom: 10vh;
 }
 .screen > img {
-	width: 80%;
+	width: 70%;
 }
 .com-msg {
 	display: flex;
@@ -72,84 +70,185 @@ p {
 }
 .com > h1 {
 	font-size: 70px;
-	padding-bottom: 3vh;
+	padding: 3vh 0;
 }
 .grow,
 .users {
-	display: grid;
-	padding: 5vh 7vw;
-	grid-template-columns: repeat(2, 2fr);
+	display: flex;
+	padding: 2vh 8vw;
 	background-color: #f6fbff;
-	column-gap: 10vw;
-}
-.users {
-	padding: 2vh 7vw;
+	gap: 10%;
 }
 .brow,
-.users > .chat {
-	padding: 15vh 0;
-}
+.users > .chat,
 .flow > .conversation {
-	padding: 25vh 0;
+	align-self: center;
 }
 .brow > h1,
 .conversation > h1,
 .chat > h1,
-.ready > h1,
-.hud {
+.hud,
+.letter > h1 {
 	padding-bottom: 3vh;
 }
-.row > img {
-	width: 400px;
-	height: 300px;
+.row > img,
+.illus > img {
+	width: 100%;
+	padding-top: 30px;
 }
 .im > img {
 	width: 100%;
 	margin: -10px 0;
 }
-.cut > img {
-	margin: 0;
-}
-.illus > img {
-	width: 400px;
-	height: 400px;
-}
 .flow {
-	margin-top: 10vh;
-	padding: 0 10vw;
 	display: flex;
-	gap: 15%;
-	margin-bottom: 10vh;
+	padding: 10vh 8vw;
+	gap: 10%;
 }
 .ready {
-	padding: 10vh 7vw;
+	padding: 100px 0;
 }
-.news {
+.ready > h1 {
+	font-size: 40px;
+	padding-bottom: 50px;
+}
+.footer {
 	display: flex;
-	gap: 30%;
-	padding: 5vh 7vw;
+	column-gap: 25%;
+	padding: 15vh 7vw;
 	background-color: hsl(192, 100%, 9%);
+	color: white;
 }
 .huddle > .hud {
 	display: flex;
-	gap: 1%;
+	gap: 2%;
+}
+.huddle > p,
+.letter > p {
+	padding-bottom: 5vh;
+	line-height: 25px;
 }
 .pic {
 	display: flex;
 	column-gap: 2vw;
+	margin-bottom: 4vh;
 }
-.pic > img {
-	width: 20px;
-	height: 20px;
+.icon {
+	display: flex;
+	column-gap: 5%;
+	font-size: 30px;
+	margin-top: 8vh;
 }
-.huddle > p,
-.pic > p,
-.letter > h1,
-.letter > p,
-.hud {
+.form-container {
+	display: flex;
+	column-gap: 2vw;
+	margin-top: 3vh;
+}
+#text {
+	border-radius: 8px;
+	width: 100%;
+	padding: 2vh 0;
+	outline: none;
+	border: none;
+}
+#but {
+	background-color: hsl(322, 100%, 66%);
 	color: white;
+	padding: 2vh 3vw;
+	border-radius: 8px;
+	border: none;
 }
-.huddle > p {
-	padding-bottom: 4vh;
-	line-height: 25px;
+@media screen and (max-width: 785px) {
+	p {
+		font-size: 16px;
+	}
+	.build > h1,
+	.ready > h1 {
+		font-size: 30px;
+	}
+	.brow > h1,
+	.conversation > h1,
+	.chat > h1 {
+		font-size: 25px;
+	}
+	.com > h1 {
+		font-size: 50px;
+	}
+	.footer {
+		flex-direction: column;
+	}
+	.footer > .huddle {
+		margin-bottom: 15vh;
+	}
+	#but {
+		width: 300px;
+		padding: 2vh 3vw;
+	}
+}
+@media screen and (max-width: 650px) {
+	.header {
+		padding: 0 30px;
+	}
+	.header > button {
+		width: 130px;
+	}
+	.img-container > img {
+		width: 180px;
+	}
+	.build > button,
+	.ready > button {
+		width: 300px;
+	}
+	.com-msg {
+		flex-direction: column;
+		text-align: center;
+		margin: 10vh 0;
+	}
+	.com {
+		margin: 5vh 0;
+	}
+	.grow,
+	.users {
+		flex-direction: column;
+		padding: 10vh 10vw;
+	}
+	.flow {
+		flex-direction: column;
+		padding: 15vh 10vw;
+	}
+	.illus > img {
+		padding-bottom: 70px;
+	}
+	.row > img {
+		padding-top: 100px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 0 20px;
+	}
+	.img-container > img {
+		width: 120px;
+	}
+	.header > button {
+		width: 90px;
+		padding: 5px;
+	}
+	.build > p {
+		padding: 0 20px 9vh 20px;
+		line-height: 25px;
+	}
+	.build > button,
+	.ready > button {
+		width: 230px;
+		padding: 20px 10px;
+	}
+	.form-container {
+		flex-direction: column;
+		flex-wrap: wrap-reverse;
+	}
+	#but {
+		width: 50%;
+		margin-top: 20px;
+	}
 }
